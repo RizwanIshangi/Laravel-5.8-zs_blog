@@ -175,6 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\PartialServiceProvider::class,
+        App\Providers\GlobalServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         GrahamCampbell\Markdown\MarkdownServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
@@ -230,6 +231,8 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'globalfunction' => App\Facades\GlobalFunction::class,
+
 
     ],
 
